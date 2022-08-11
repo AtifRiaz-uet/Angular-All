@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <h1>Add in To-do List</h1>
+  <form >
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" class="form-control" [(ngModel)]="_title" name="title" >
+    </div>
+
+    <div class="form-group">
+      <label>Description</label>
+      <textarea class="form-control" [(ngModel)]="_description" name="description" rows="3"></textarea>
+    </div>
+    
+  </form>
+  <br>
+  <button class="btn btn-primary" (click)="submit()">Add on List</button>
+
+</div>
+<div *ngIf="">
+
+</div>
+<hr>
+<app-detail [getinfolist]="info_list"></app-detail>
+
+
